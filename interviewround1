@@ -1,0 +1,32 @@
+Write a program to get the 2nd largest value from an array
+
+
+ int []a={11,14,13,15,12};
+
+ int max=a[0];  11
+
+ for(int i=0;i<a.length-1;i++){
+   
+            15     12
+        if(max < a[i+1]){
+            max=a[i+1]; 15
+        }
+  }
+
+  
+  Systom.out.print("largest value in this array :"+max);
+
+
+  Students table having id, name, age, rank, join_date
+1. list students age is 18
+2.  list  student name start with A
+3. List students who are secured first, second, third rank
+4. List students join date between 01-04-2025 to 30-04-2025
+
+1, select name from student where age=18
+
+2, select name from student where name like 'a%'
+
+3, select name from student where rank in("first","second","third")
+
+4, select name from student where joint_date between  "2025-04-01" and "2025-04-30"

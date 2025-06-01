@@ -47,9 +47,6 @@
             </select>
           </div>
 
-          <input type="hidden" name="status" value="1">
-          <input type="hidden" name="Flag" value="1">
-
           <div class="d-grid">
             <button type="submit" class="btn btn-primary">Register</button>
           </div>
@@ -66,13 +63,13 @@
       event.preventDefault(); // Prevent the form from submitting the traditional way
 
       // Retrieve form values
-      var sPlanName = document.getElementById("planName").value;
-      var sSaveAmount = document.getElementById("saveAmount").value;
-      var iFrequency = document.getElementById("frequency").value;
-      var iNumberOfFrequency = document.getElementById("number_of_frequency").value;
-      var sStartDate = document.getElementById("startdate").value;
-      var sPayingAmount = document.getElementById("payingAmount").value;
-      var sNotification = document.getElementById("notification").value;
+      var sUserName = document.getElementById("username").value;
+      var sPassword = document.getElementById("password").value;
+      var iFrequency = document.getElementById("name").value;
+      var iNumberOfFrequency = document.getElementById("email").value;
+      var sStartDate = document.getElementById("phone").value;
+      var sPayingAmount = document.getElementById("usertype").value;
+     
 
       // Prepare data for POST
       var data = `sPlanName=${encodeURIComponent(sPlanName)}&sSaveAmount=${encodeURIComponent(sSaveAmount)}&iFrequency=${encodeURIComponent(iFrequency)}&iNumberOfFrequency=${encodeURIComponent(iNumberOfFrequency)}&sStartDate=${encodeURIComponent(sStartDate)}&sPayingAmount=${encodeURIComponent(sPayingAmount)}&sNotification=${encodeURIComponent(sNotification)}`;
